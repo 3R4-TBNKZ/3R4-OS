@@ -8,7 +8,7 @@ on:
       - "**/*.yml"
 
 env:
-  SXSC_REPO: "https://github.com/Atlas-OS/sxsc"
+  SXSC_REPO: "https://github.com/3R4-TBNKZ/SXSC"
 
 jobs:
   build:
