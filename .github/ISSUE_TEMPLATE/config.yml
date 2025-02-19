@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Report an issue about the 3R4 Documentation
-    url: https://github.com/Atlas-OS/docs/issues/
+    url: https://github.com/3R4-TBNKZ/docs/issues
     about: Report all documentation issues in our 'docs' repository issue tracker.
   - name: Report a non-3R4 related issue
-    url: https://github.com/Atlas-OS/Atlas/discussions
+    url: https://github.com/3R4-TBNKZ/3R4-OS/discussions/1
     about: Please report any non-3R4 Playbook related issue in the 'Bug Report' section on GitHub Discussions (website, Discord bot, etc.).

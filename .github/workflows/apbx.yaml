@@ -105,8 +105,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --local user.email "141822421+atlasos-admin@users.noreply.github.com"
-          git config --local user.name "atlasos-admin"
+          git config --local user.email "199518260+3R4-TBNKZ@users.noreply.github.com"
+          git config --local user.name "3R4-TBNKZ"
           git add -A
           git commit -m "feat: auto-update CAB packages ($($env:GITHUB_SHA.Substring(0, 8)))"
           git push

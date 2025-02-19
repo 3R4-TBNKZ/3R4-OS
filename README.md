@@ -1,22 +1,22 @@
 <h1 align="center">
-  <a href="http://atlasos.net" target="_blank"><img src="https://gcore.jsdelivr.net/gh/Atlas-OS/branding@main/banners/banner-v3.png" alt="3R4" width="800"></a>
+  <a href="https://github.com/3R4-TBNKZ" target="_blank"><img src="https://github.com/3R4-TBNKZ/Book-s/blob/main/static/image/preview-banner-v1.png" alt="3R4"></a>
 </h1>
   <p align="center">
-    <a href="https://github.com/Atlas-OS/Atlas/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/atlas-os/atlas?style=for-the-badge&logo=github&color=1A91FF"/></a>
-    <a href="https://github.com/Atlas-OS/Atlas/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/atlas-os/atlas?style=for-the-badge&color=1A91FF" /></a>
-    <a href="https://github.com/Atlas-OS/Atlas/releases/latest"><img alt="Release" src="https://img.shields.io/github/release/atlas-os/atlas?style=for-the-badge&color=1A91FF" /></a>
-    <a href="https://github.com/Atlas-OS/.github/blob/main/profile/CODE_OF_CONDUCT.md"><img alt="Code of Conduct" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=for-the-badge&color=1A91FF" /></a>
+    <a href="https://github.com/3R4-TBNKZ/3R4-OS/blob/main/LICENSE"><img alt="License" src="https://camo.githubusercontent.com/dc01adf2c4c257a3392cb942f165ac1100269db653317482514346d11056c10d/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f61746c61732d6f732f61746c61733f7374796c653d666f722d7468652d6261646765266c6f676f3d67697468756226636f6c6f723d314139314646"></a>
+    <img alt="Contributors" src="https://img.shields.io/badge/CONTRIBUTOR-1-1A91FF?style=for-the-badge"></a>
+    <a href="https://github.com/3R4-TBNKZ/3R4-OS"><img alt="Release" src="https://img.shields.io/badge/RELEASE-V1.0-1A91FF?style=for-the-badge"></a>
+    <a href="https://github.com/3R4-TBNKZ/.github/blob/main/profile/CODE_OF_CONDUCT.md"><img alt="Code of Conduct" src="https://img.shields.io/badge/CONTRIBUTOR%20COVENANT-V1.0-%231A91FF?style=for-the-badge"></a>
   </p>
 <p align="center">A transparent and lightweight modification to Windows, designed to optimize performance, privacy and usability.</p>
 
 <p align="center">
-  <a href="https://atlasos.net" target="_blank">🌐 Website</a>
+  <a href="https://github.com/3R4-TBNKZ" target="_blank">😺 GitHub</a>
   •
-  <a href="https://docs.atlasos.net" target="_blank">📚 Documentation</a>
+  <a href="https://github.com/3R4-TBNKZ/docs" target="_blank">📚 Documentation</a>
   •
-  <a href="https://discord.atlasos.net" target="_blank">☎️ Discord</a>
+  <a href="https://discord.gg/gjUJHeguN6" target="_blank">☎️ Discord</a>
   •
-  <a href="https://github.com/Atlas-OS/Atlas/discussions" target="_blank">💬 Discussions</a>
+  <a href="https://github.com/3R4-TBNKZ/3R4-OS/discussions" target="_blank">💬 Discussions</a>
 </p>
 
 ## 📚 **Important Documentation**
@@ -57,7 +57,7 @@ Unlike custom Windows ISOs, 3R4 is more straightforward to audit due to the use 
 
 Playbooks are renamed **.zip** archives, with the password [`malte`](https://docs.ameliorated.io/developers/getting-started/creation.html). As they primarily consist of plain text, Playbooks enable transparency, unlike custom Windows ISOs, which have many entry points for malicious activity. The few binaries in the Playbook are open source in our [`utilities` repository](https://github.com/Atlas-OS/utilities), with the [hashes listed here](https://github.com/Atlas-OS/Atlas/blob/main/src/playbook/Executables/AtlasModules/README.md).
 
-Although the GUI is not open source for AME Wizard, AME Wizard's entire backend (called [TrustedUninstaller](https://github.com/Ameliorated-LLC/trusted-uninstaller-cli)) is open source under MIT, which contains each action used to run 3R4. The 3R4 Playbook is open source under the [GPLv3 license](https://github.com/Atlas-OS/Atlas/blob/main/LICENSE).
+Although the GUI is not open source for AME Wizard, AME Wizard's entire backend (called [TrustedUninstaller](https://github.com/Ameliorated-LLC/trusted-uninstaller-cli)) is open source under MIT, which contains each action used to run 3R4. The 3R4 Playbook is open source under the [GPLv3 license](https://github.com/3R4-TBNKZ/3R4-OS/blob/main/LICENSE).
 
 ### 🔒 Legal Compliance
 As 3R4 doesn't redistribute a modified Windows ISO, it complies with [Windows's Usage Terms](https://www.microsoft.com/en-us/useterms/#areaheading-uid6738235). In addition, 3R4 does not alter activation in Windows.
@@ -65,5 +65,5 @@ As 3R4 doesn't redistribute a modified Windows ISO, it complies with [Windows's 
 ## 🎨 Brand kit
 Want to create your own 3R4 wallpaper with some original creative designs? Visit our [Branding Kit on Docs](https://docs.atlasos.net/branding/) and share your creations on our [GitHub Discussions](https://github.com/Atlas-OS/Atlas/discussions/categories/community-artwork)!
 
-## 💙 Contributors
-<a href="https://github.com/Atlas-OS/Atlas/graphs/contributors" target="_blank"><img src="https://contrib.rocks/image?repo=Atlas-OS/Atlas&columns=18" alt="Avatars of all contributors"></a>
+## 💙 Credits
+<a href="https://github.com/3R4-TBNKZ" target="_blank"><img src="https://avatars.githubusercontent.com/u/199518260?v=4&size=64" alt="3R4-TBNKZ"></a>

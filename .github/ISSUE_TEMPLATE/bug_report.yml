@@ -11,11 +11,11 @@ body:
     label: Before continuing...
     description: Please ensure you meet the following criteria. If not, the maintainers reserve the right to close and lock your issue.
     options:
-    - label: "I agree to follow 3R4' [Code of Conduct](https://github.com/GOD-TBnkz/.github/blob/main/profile/CODE_OF_CONDUCT.md)"
+    - label: "I agree to follow 3R4' [Code of Conduct](https://github.com/3R4-TBNKZ/.github/blob/main/profile/CODE_OF_CONDUCT.md)"
       required: true
-    - label: "I have searched our [issue tracker](https://github.com/Atlas-OS/Atlas/issues?q=is%3Aissue) to verify that the issue hasn't been reported already"
+    - label: "I have searched our [issue tracker](https://github.com/3R4-TBNKZ/3R4-OS/issues) to verify that the issue hasn't been reported already"
       required: true
-    - label: "I have searched the [3R4 documentation](https://docs.atlasos.net) beforehand for a solution"
+    - label: "I have searched the [3R4 documentation](https://github.com/3R4-TBNKZ/docs) beforehand for a solution"
       required: true
     - label: "I am on the latest version of 3R4, and didn't do an unsupported upgrade"
       required: true
@@ -55,7 +55,7 @@ body:
 - type: dropdown
   attributes:
     label: 3R4 Version
-    description: 'If you''re on v1.0, see the workarounds page first: https://github.com/orgs/Atlas-OS/projects/7/views/5'
+    description: 'If you''re on v1.0, see the workarounds page first:'
     options:
     - 3R4 v1.0 for Windows 10 22H2
     - 3R4 v1.0 for Windows 11 24H2
