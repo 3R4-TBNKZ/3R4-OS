@@ -1,0 +1,38 @@
+---
+title: Configure OEM Information
+description: Configures OEM information to contain the 3R4 version and the 3R4 Discord server
+actions:
+  - !powerShell:
+    command: |
+      $version = '3R4VersionUndefined'
+
+      Write-Output 'Setting boot entry name...'
+      bcdedit /set description """3R4-OS $(('10', '11')[[int]([System.Environment]::OSVersion.Version.Build -ge 22000)]) $version"""
+
+      Write-Output 'Setting other versioned OEM information...'
+      $reportedVer = """3R4 Playbook $version"""
+      # Shows in Settings
+      Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation' -Name 'Model' -Value $reportedVer -Force
+      # Shows in winver
+      Set-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion' -Name 'RegisteredOrganization' -Value $reportedVer -Force
+    wait: true
+  - !registryValue:
+    path: 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation'
+    value: 'Manufacturer'
+    data: '3R4 Team'
+    type: REG_SZ
+  - !registryValue:
+    path: 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation'
+    value: 'SupportURL'
+    data: 'https://discord.gg/gjUJHeguN6'
+    type: REG_SZ
+  - !registryValue:
+    path: 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation'
+    value: 'SupportPhone'
+    data: 'https://github.com/GOD-TBnkz'
+    type: REG_SZ
+  - !registryValue:
+    path: 'HKLM\SOFTWARE\3R4'
+    value: 'WinreFallbackFixed'
+    data: '1'
+    type: REG_SZ

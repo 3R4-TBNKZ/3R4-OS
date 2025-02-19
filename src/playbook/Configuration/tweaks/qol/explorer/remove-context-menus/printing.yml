@@ -1,0 +1,8 @@
+---
+title: Remove 'Printing' from Context Menus
+description: Removes printing from context menus as users normally print from apps anyways
+actions:
+  - !cmd:
+    command: '"3R4Desktop\6. Advanced Configuration\Services\Printing\Disable Printing.cmd" /justcontext'
+    exeDir: true
+    wait: true

@@ -1,0 +1,44 @@
+[Theme]
+DisplayName=3R4 Solid
+ThemeId={1545A5F7-3E0C-4670-8A21-99FDEEA37AA5}
+
+[Control Panel\Desktop]
+Wallpaper=%windir%\3R4Modules\Wallpapers\3R4-solid.png
+Pattern=
+MultimonBackgrounds=0
+PicturePosition=4
+WindowsSpotlight=0
+
+[Control Panel\Cursors]
+AppStarting=%windir%\cursors\Busy Waiting.ani
+Arrow=%windir%\cursors\Normal Select.cur
+Crosshair=%windir%\cursors\Precision Select.cur
+IBeam=%windir%\cursors\Text Select.cur
+Hand=%windir%\cursors\Link Select.cur
+Help=%windir%\cursors\Help Select.cur
+No=%windir%\cursors\Unavailable.cur
+NWPen=%windir%\cursors\Handwriting.cur
+SizeAll=%windir%\cursors\Move.cur
+SizeNESW=%windir%\cursors\Diagonal Resize 2.cur
+SizeNS=%windir%\cursors\Vertical Resize.cur
+SizeNWSE=%windir%\cursors\Diagonal Resize 1.cur
+SizeWE=%windir%\cursors\Horizontal Resize.cur
+UpArrow=%windir%\cursors\Alternate Select.cur
+Wait=%windir%\cursors\Busy Star.ani
+DefaultValue=Windows Default
+
+[Sounds]
+SchemeName=No Sounds
+
+[VisualStyles]
+Path=%SystemRoot%\resources\themes\Aero\Aero.msstyles
+ColorStyle=NormalColor
+Size=NormalSize
+AutoColorization=0
+ColorizationColor=0XC42D7D9A
+SystemMode=Dark
+AppMode=Dark
+VisualStyleVersion=10
+
+[MasterThemeSelector]
+MTSM=RJSPBS

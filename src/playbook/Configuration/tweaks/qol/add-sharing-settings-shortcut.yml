@@ -1,0 +1,12 @@
+---
+title: Add Network Sharing Shortcut
+description: Adds a network sharing settings shortcut to the 3R4 'File Sharing' folder for QoL
+actions:
+  - !powerShell:
+    command: |
+      .\3R4Modules\initPowerShell.ps1
+      New-Shortcut -Source 'control.exe' `
+        -Destination """$([Environment]::GetFolderPath('Windows'))\3R4Desktop\3. General Configuration\File Sharing\Sharing Settings.lnk""" `
+        -Arguments '/name Microsoft.NetworkAndSharingCenter /page Advanced'
+    exeDir: true
+    wait: true
