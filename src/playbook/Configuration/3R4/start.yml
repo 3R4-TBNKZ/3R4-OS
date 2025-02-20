@@ -88,5 +88,13 @@ actions:
     weight: 120
     option: 'browser-chrome'
     runas: currentUserElevated
+  - !writeStatus: {status: 'Installing OperaGX', option: 'browser-operagx'}
+  - !powerShell:
+    command: '.\SOFTWARE.ps1 -OperaGX'
+    exeDir: true
+    wait: true
+    weight: 120
+    option: 'browser-operagx'
+    runas: currentUserElevated
 
   ################ END NO LOCAL BUILD ################

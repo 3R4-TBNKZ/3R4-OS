@@ -30,12 +30,20 @@ set chromeAssociations="Proto:https:ChromeHTML"^
  ".pdf:ChromeHTML"^
  ".shtml:ChromeHTML"
 
+set operaGXStableAssociations="Proto:https:Opera GXStable"^
+ "Proto:http:Opera GXStable"^
+ ".htm:Opera GXStable"^
+ ".html:Opera GXStable"^
+ ".pdf:Opera GXStable"^
+ ".shtml:Opera GXStable"
+
 if "%~1" == "" set "associations=%baseAssociations%"
 if "%~1" == "Microsoft Edge" set "associations=%baseAssociations%"
 if "%~1" == "Brave" set "associations=%baseAssociations% %braveAssociations%"
 if "%~1" == "LibreWolf" set "associations=%baseAssociations% %libreWolfAssociations%"
 if "%~1" == "Firefox" set "associations=%baseAssociations% %firefoxAssociations%"
 if "%~1" == "Google Chrome" set "associations=%baseAssociations% %chromeAssociations%"
+if "%~1" == "Opera GXStable" set "associations=%baseAssociations% %operaGXStableAssociations%"
 if exist "%ProgramFiles%\7-Zip\7zFM.exe" set sevenZip=y
 
 :: Set 7-Zip assocations

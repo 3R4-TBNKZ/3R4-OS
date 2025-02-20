@@ -26,3 +26,8 @@ actions:
     args: '"Google Chrome"'
     option: 'browser-chrome'
     exeDir: true
+  - !run:
+    exe: 'FILEASSOC.cmd'
+    args: '"Opera GX"'
+    option: 'browser-operagx'
+    exeDir: true

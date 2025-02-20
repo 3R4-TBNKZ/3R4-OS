@@ -1,7 +1,8 @@
 param (
 	[switch]$Chrome,
 	[switch]$Brave,
-	[switch]$Firefox
+	[switch]$Firefox,
+	[switch]$OperaGX
 )
 
 .\3R4Modules\initPowerShell.ps1
@@ -27,7 +28,6 @@ if ($Brave) {
 	if (!$?) {
 		Write-Error "Downloading Brave failed."
 		exit 1
-	}
 
 	Write-Output "Installing Brave..."
 	Start-Process -FilePath "$tempDir\BraveSetup.exe" -WindowStyle Hidden -ArgumentList '/silent /install'
@@ -66,6 +66,22 @@ if ($Chrome) {
 	& curl.exe -LSs "https://dl.google.com/dl/chrome/install/googlechromestandaloneenterprise$chromeArch.msi" -o "$tempDir\chrome.msi" $timeouts
 	Write-Output "Installing Google Chrome..."
 	Start-Process -FilePath "$tempDir\chrome.msi" -WindowStyle Hidden -ArgumentList '/qn' -Wait
+
+	Remove-TempDirectory
+	exit
+}
+
+
+}
+
+# OperaGX
+if ($OperaGX) {
+	$OperaGXArch = ('win64', 'win64-aarch64')
+
+	Write-Output "Downloading OperaGX..."
+	& curl.exe -LSs "https://net.geo.opera.com/opera_gx/stable/windows" -o "$tempDir\OperaGXSetup.exe" $timeouts
+	Write-Output "Installing Firefox..."
+	Start-Process -FilePath "$tempDir\OperaGXSetup.exe" -WindowStyle Hidden -ArgumentList '/S /ALLUSERS=1' -Wait
 
 	Remove-TempDirectory
 	exit
