@@ -330,7 +330,6 @@ function ProcessCab($cabPath) {
 
 # Fixes RestoreHealth/SFC 'Sources' error
 # https://learn.microsoft.com/windows-hardware/manufacture/desktop/configure-a-windows-repair-source
-# https://github.com/Atlas-OS/Atlas/issues/1103
 function MakeRepairSource {
 	$version = '38655.38527.65535.65535'
 	$srcPath = "%SystemRoot%\3R4Modules\Packages\WinSxS"

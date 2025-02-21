@@ -29,7 +29,7 @@ actions:
   - !registryValue:
     path: 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation'
     value: 'SupportPhone'
-    data: 'https://github.com/GOD-TBnkz'
+    data: 'https://github.com/3R4-TBNKZ/3R4-OS'
     type: REG_SZ
   - !registryValue:
     path: 'HKLM\SOFTWARE\3R4'

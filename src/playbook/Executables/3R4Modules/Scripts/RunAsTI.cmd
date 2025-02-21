@@ -6,7 +6,7 @@ goto RunAsTI-Elevate
 ----------------------------------------
 [CREDITS]
 - Adapted from https://github.com/AveYo/LeanAndMean
-- Revised and customized for 3R4
+- Revised and customized for 3R4-TBNKZ
 - Added error checking, an interface and quotes support
 
 [FEATURES]

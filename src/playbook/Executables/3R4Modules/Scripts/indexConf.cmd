@@ -1,5 +1,8 @@
 @echo off
 
+[CREDITS]
+- Made by 3R4-TBNKZ
+
 fltmc > nul 2>&1 || (echo You must run this script as admin. & exit /b)
 set ___settings=call "%windir%\3R4Modules\Scripts\settingsPages.cmd"
 

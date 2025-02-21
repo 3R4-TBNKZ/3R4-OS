@@ -1,5 +1,8 @@
 @echo off
 
+[CREDITS]
+- Made by 3R4-TBNKZ
+
 fltmc > nul 2>&1 || (echo You must run this script as admin. & exit /b)
 if "%~1"=="" goto help
 if "%~2"=="" goto help

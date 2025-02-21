@@ -88,6 +88,9 @@ init_item "Google Chrome" "Google.Chrome"
 # https://winstall.app/apps/LibreWolf.LibreWolf
 init_item "LibreWolf" "LibreWolf.LibreWolf"
 
+# https://winstall.app/apps/Opera.OperaGX
+init_item "OperaGX" "Opera.OperaGX"
+
 # https://winstall.app/apps/TorProject.TorBrowser
 init_item "Tor Browser" "TorProject.TorBrowser"
 

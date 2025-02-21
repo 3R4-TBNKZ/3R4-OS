@@ -10,7 +10,7 @@ You can use wildcards, like '*Device*'
 If -Enable is not specified, device is disabled
 
 [USAGE IN A SCRIPT]
-- Made by he3als & Xyueta
+- Made by 3R4-TBNKZ
 - Below shows how to use it for mass disabling devices in a batch script
 
 for %%a in (

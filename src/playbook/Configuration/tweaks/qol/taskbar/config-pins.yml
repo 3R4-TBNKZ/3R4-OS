@@ -59,4 +59,8 @@ actions:
     command: ".\\TASKBARPINS.ps1 'LibreWolf'"
     option: 'browser-librewolf'
     exeDir: true
+  - !powerShell:
+    command: ".\\TASKBARPINS.ps1 'OperaGX'"
+    option: 'browser-operagx'
+    exeDir: true
   - !run: {exe: 'explorer.exe', runas: 'currentUser', wait: false}

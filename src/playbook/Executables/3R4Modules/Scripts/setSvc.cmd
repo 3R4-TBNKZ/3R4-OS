@@ -4,7 +4,7 @@ goto script
 ----------------------------------------
 
 [CREDITS]
-- Made by he3als & Xyueta
+- Made by 3R4-TBNKZ
 
 [FEATURES]
 - Checking whether the service/driver exists or not, and error detection

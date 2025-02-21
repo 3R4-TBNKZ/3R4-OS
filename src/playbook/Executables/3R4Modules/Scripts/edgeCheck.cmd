@@ -1,5 +1,8 @@
 @echo off
 
+[CREDITS]
+- Made by 3R4-TBNKZ
+
 set ___edge=0
 if exist "%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" (
     set ___edge=1
