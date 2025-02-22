@@ -4,9 +4,22 @@ description: Configures taskbar pins for QoL, puts the browser first (if there i
 actions:
     # PowerShell commands used:
   - !powerShell: 
-      command: '[BitConverter]::ToString($(Get-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband" -Name "FavoritesResolve").FavoritesResolve) -replace ''-'' | clip'
+    command: |
+      try {
+          $favoritesResolve = Get-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband" -Name "FavoritesResolve" -ErrorAction Stop
+          [BitConverter]::ToString($favoritesResolve.FavoritesResolve) -replace '-', '' | clip
+      } catch {
+          Write-Host "Error retrieving FavoritesResolve: $_"
+      }
+
   - !powerShell: 
-      command: '[BitConverter]::ToString($(Get-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband" -Name "Favorites").Favorites) -replace ''-'' | clip'
+    command: |
+      try {
+          $favorites = Get-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Taskband" -Name "Favorites" -ErrorAction Stop
+          [BitConverter]::ToString($favorites.Favorites) -replace '-', '' | clip
+      } catch {
+          Write-Host "Error retrieving Favorites: $_"
+      }
 
   - !taskKill: {name: 'explorer'}
 
