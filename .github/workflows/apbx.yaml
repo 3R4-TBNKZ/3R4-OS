@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
-          token: ${{ secrets.RUNNER_SECRET }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Validate YAML files
         run: 'yamllint -d "{extends: relaxed, rules: {empty-lines: disable, line-length: disable, new-line-at-end-of-file: disable, trailing-spaces: disable, new-lines: {type: platform}}}" .'
@@ -105,8 +105,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --local user.email "199518260+3R4-TBNKZ@users.noreply.github.com"
-          git config --local user.name "3R4-TBNKZ"
+          git config --global user.email "199518260+3R4-TBNKZ@users.noreply.github.com"
+          git config --global user.name "3R4-TBNKZ"
           git add -A
           git commit -m "feat: auto-update CAB packages ($($env:GITHUB_SHA.Substring(0, 8)))"
           git push
